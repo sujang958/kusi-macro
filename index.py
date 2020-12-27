@@ -1,8 +1,9 @@
 import pyautogui as pag
 import keyboard, time
+from random import randint
 
 
-# bad_words = ['qudtls', 'tlqkf', 'rotoRl']
+bad_words = ['qudtls', 'tlqkf', 'rotoRl', 'whw']
 isOnStart = False
 
 pag.PAUSE = 1  
@@ -21,6 +22,9 @@ pag.FAILSAFE = True
 
 
 while True:
+    randomIndex = randint(0, len(bad_words) - 1)
+    bad_sentence = "zmtldi {}".format(bad_words[randomIndex])
+
     if keyboard.is_pressed('F5'):
         if isOnStart == False:
             isOnStart = True
@@ -29,7 +33,7 @@ while True:
     if keyboard.is_pressed('F6'):
         break
     if isOnStart == True:
-        pag.typewrite('zmtldi qudtls')
+        pag.typewrite(bad_sentence)
         pag.press('enter')
 
 
