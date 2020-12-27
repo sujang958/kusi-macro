@@ -26,10 +26,9 @@ while True:
     bad_sentence = "zmtldi {}".format(bad_words[randomIndex])
 
     if keyboard.is_pressed('F5'):
-        if isOnStart == False:
-            isOnStart = True
-        else:
-            isOnStart = False
+        isOnStart = True
+    if keyboard.is_pressed('F7'):
+        isOnStart = False
     if keyboard.is_pressed('F6'):
         break
     if isOnStart == True:
