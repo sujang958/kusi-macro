@@ -7,7 +7,7 @@
 
 #### 주의사항
 **python3이 설치되있어야합니다**  
-**PyAutoGui 모듈과 Keyboard모듈이 설치되있어야합니다**
+**PyAutoGui 모듈과 Keyboard모듈, win10toast모듈이 설치되있어야합니다**
 
 
 #### 사용법
